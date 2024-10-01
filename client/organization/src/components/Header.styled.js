@@ -13,6 +13,21 @@ export const HeaderWrapper = styled.div`
   height: 100px;
   width: 80%;
   margin-left: 10%;
+  svg {
+    display: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    margin-left: 5%;
+    svg {
+      display: block;
+      transform: scale(250%);
+    }
+    button {
+      display: none;
+    }
+  }
 `;
 
 export const Links = styled.nav`
@@ -25,5 +40,9 @@ export const Links = styled.nav`
     &:hover {
       color: #ffd09b;
     }
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: none;
   }
 `;
