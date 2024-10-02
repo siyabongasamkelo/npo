@@ -13,9 +13,6 @@ export const HeaderWrapper = styled.div`
   height: 100px;
   width: 80%;
   margin-left: 10%;
-  svg {
-    display: none;
-  }
 
   @media only screen and (max-width: 600px) {
     width: 90%;
@@ -26,6 +23,25 @@ export const HeaderWrapper = styled.div`
     }
     button {
       display: none;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    width: 90%;
+    margin-left: 5%;
+    svg {
+      display: block;
+      transform: scale(250%);
+    }
+    button {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    svg {
+      display: none;
+    }
+    button {
+      display: block;
     }
   }
 `;
@@ -44,5 +60,11 @@ export const Links = styled.nav`
 
   @media only screen and (max-width: 600px) {
     display: none;
+  }
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+  @media only screen and (min-width: 992px) {
+    display: block;
   }
 `;
