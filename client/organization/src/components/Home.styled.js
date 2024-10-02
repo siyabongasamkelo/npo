@@ -44,4 +44,38 @@ export const HeroSection = styled.div`
       cursor: pointer;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 40px;
+      margin-top: 70%;
+    }
+    p {
+      font-size: 14px;
+    }
+    div {
+      margin-left: -7%;
+    }
+    button {
+      margin-top: 15%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 62px;
+      margin-top: 35%;
+    }
+    p {
+      font-size: 22px;
+      margin-top: 10%;
+    }
+    button {
+      margin-top: 5%;
+    }
+    div {
+      margin-top: 14%;
+      margin-left: -6%;
+    }
+  }
 `;
