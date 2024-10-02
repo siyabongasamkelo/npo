@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -7,16 +6,7 @@ import {
 } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// function App() {
-//   return (
-//     <div className="App">
-//       <HomePage />
-//     </div>
-//   );
-// }
 
-// export default App;
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
