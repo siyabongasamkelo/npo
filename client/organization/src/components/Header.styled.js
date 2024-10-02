@@ -53,6 +53,7 @@ export const Links = styled.nav`
     text-decoration: none;
     color: rgba(225, 225, 225, 0.8);
     transition: 0.5s ease-in-out;
+    font-family: "Afacad Flux", sans-serif;
     &:hover {
       color: #ffd09b;
     }

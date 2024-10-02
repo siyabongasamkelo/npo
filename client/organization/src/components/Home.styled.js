@@ -24,6 +24,7 @@ export const HeroSection = styled.div`
   p {
     color: rgba(255, 255, 255, 0.9);
     margin-top: -2%;
+    font-family: "Afacad Flux", sans-serif;
   }
   span {
     color: #fff7d1;
@@ -76,6 +77,23 @@ export const HeroSection = styled.div`
     div {
       margin-top: 14%;
       margin-left: -6%;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    h1 {
+      margin-top: 15%;
+      font-size: 84px;
+    }
+    p {
+      margin-top: -2%;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 0;
+    }
+    div {
+      margin-top: 14%;
+      margin-left: -90%;
     }
   }
 `;
