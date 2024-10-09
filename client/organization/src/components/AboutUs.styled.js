@@ -79,28 +79,37 @@ export const AboutText = styled.div`
     margin-left: 5%;
     p {
       text-align: justify;
+      font-size: 22px;
     }
   }
   @media only screen and (min-width: 992px) {
     width: 23%;
     height: 100%;
     p {
+      font-size: 16px;
+      text-align: left;
     }
   }
 `;
 
 export const OurTeamDiv = styled.div`
-  @media only screen and (min-width: 992px) {
-    width: 65%;
-    margin-left: 17.5%;
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+    margin-left: 10%;
     h2 {
       font-size: 32px;
       text-align: center;
     }
   }
-  @media only screen and (max-width: 600px) {
-    width: 80%;
-    margin-left: 10%;
+  @media only screen and (min-width: 768px) {
+    h2 {
+      text-align: center;
+      font-size: 32px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    width: 65%;
+    margin-left: 17.5%;
     h2 {
       font-size: 32px;
       text-align: center;
@@ -114,5 +123,12 @@ export const OurTeam = styled.div`
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     align-items: center;
+  }
+  @media only screen and (min-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
   }
 `;
