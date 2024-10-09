@@ -8,6 +8,14 @@ export const TeamCoverCard = styled.div`
   @media only screen and (max-width: 600px) {
     width: 85%;
   }
+  @media only screen and (min-width: 768px) {
+    width: 75%;
+    height: 70vh;
+  }
+  @media only screen and (min-width: 992px) {
+    height: 45vh;
+    width: 23%;
+  }
 `;
 
 export const ProfilePhoto = styled.div`
@@ -25,6 +33,16 @@ export const Details = styled.div`
   font-family: "Afacad Flux", sans-serif;
   p {
     padding-top: 2%;
+  }
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: 22px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    p {
+      font-size: 17px;
+    }
   }
 `;
 
