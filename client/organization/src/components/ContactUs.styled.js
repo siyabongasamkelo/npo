@@ -27,9 +27,25 @@ export const ContactDetails = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+    margin-left: 10%;
+    svg {
+      padding-left: 15px;
+    }
+  }
 `;
 
 export const ContactFormCover = styled.div`
   width: 30%;
   margin-left: 10%;
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 80%;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 30%;
+  }
 `;
