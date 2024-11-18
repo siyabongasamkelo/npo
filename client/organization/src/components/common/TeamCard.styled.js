@@ -9,7 +9,7 @@ export const TeamCoverCard = styled.div`
     width: 85%;
   }
   @media only screen and (min-width: 768px) {
-    width: 75%;
+    width: 60%;
     height: 70vh;
   }
   @media only screen and (min-width: 992px) {
@@ -51,4 +51,10 @@ export const Action = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  button {
+    height: 50px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+  }
 `;
