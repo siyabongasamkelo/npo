@@ -10,13 +10,13 @@ const Donate = () => {
         <p>Your donations can help us make a huge different...</p>
         <div>
           <form>
-            <input
+            {/* <input
               type="number"
               placeholder="Enter Amount"
               required
               name="amount"
               id="amount"
-            />
+            /> */}
             <br></br>
             <Button type="submit">Donate</Button>
           </form>
