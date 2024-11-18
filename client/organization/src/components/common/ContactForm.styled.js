@@ -8,6 +8,7 @@ export const FormCover = styled.form`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-left: 20%;
 
   input {
     height: 10px;
@@ -28,5 +29,22 @@ export const FormCover = styled.form`
   }
   button {
     margin-top: 8%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin-left: 0;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 100%;
+    margin-left: 0;
+    input {
+      font-size: 16px;
+    }
+    textarea {
+      font-size: 16px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    width: 75%;
   }
 `;
