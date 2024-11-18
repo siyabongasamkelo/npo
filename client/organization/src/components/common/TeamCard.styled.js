@@ -57,4 +57,10 @@ export const Action = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.4);
     font-size: 16px;
   }
+  @media only screen and (max-width: 600px) {
+    button {
+      height: 35px;
+      width: 80%;
+    }
+  }
 `;
