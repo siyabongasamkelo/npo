@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <HeaderCover>
       <HeaderWrapper>
-        <h3>organization</h3>
+        <h3>Sitinonke</h3>
         <Links>
           <Link to="/">Home</Link>
           <Link to="/">About Us</Link>
