@@ -49,7 +49,8 @@ export const HeroSection = styled.div`
   @media only screen and (max-width: 600px) {
     h1 {
       font-size: 40px;
-      margin-top: 70%;
+      margin-top: 50%;
+      background-color: red;
     }
     p {
       font-size: 14px;
