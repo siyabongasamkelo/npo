@@ -50,7 +50,6 @@ export const HeroSection = styled.div`
     h1 {
       font-size: 40px;
       margin-top: 50%;
-      background-color: red;
     }
     p {
       font-size: 14px;
