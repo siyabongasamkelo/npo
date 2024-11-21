@@ -2,6 +2,8 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import crypto from "crypto";
+import sendMessageRouter from "./routes/sendMessageRouter.js";
+import paymentRouter from "./routes/paymentRouter.js";
 dotenv.config();
 
 const app = express();
@@ -92,6 +94,9 @@ app.get("/return_url", (req, res) => {
 app.get("/cancel_url", (req, res) => {
   res.send("Thank you for your payment");
 });
+
+app.use("/send", sendMessageRouter);
+app.use("/donate", paymentRouter);
 
 app.all("*", (req, res) => {
   res.status(400).json("404 Page not found");
