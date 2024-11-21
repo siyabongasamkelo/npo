@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  /* height: 20vh; */
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 `;
