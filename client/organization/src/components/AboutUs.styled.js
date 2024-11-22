@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const AboutUsCover = styled.section`
   background-color: white;
+  /* background-color: red; */
 `;
 
 export const AboutDiv = styled.div`
@@ -39,6 +40,7 @@ export const AboutPic = styled.div`
   @media only screen and (max-width: 600px) {
     width: 90%;
     margin-left: 5%;
+    margin-top: 5%;
     img {
       height: 50%;
       width: 100%;
@@ -47,19 +49,20 @@ export const AboutPic = styled.div`
   @media only screen and (min-width: 768px) {
     width: 90%;
     margin-left: 5%;
+    margin-top: 5%;
     img {
       height: 50%;
       width: 100%;
     }
   }
   @media only screen and (min-width: 992px) {
-    width: 50%;
+    width: 45%;
     height: 100%;
     img {
-      height: 90%;
-      width: 70%;
-      padding: 3%;
-      margin-left: 20%;
+      height: 75%;
+      width: 95%;
+      margin-top: 5%;
+      margin-left: 5%;
     }
   }
 `;
@@ -70,24 +73,27 @@ export const AboutText = styled.div`
   @media only screen and (max-width: 600px) {
     width: 90%;
     margin-left: 5%;
+    margin-top: 5%;
     p {
-      text-align: justify;
+      /* text-align: justify; */
     }
   }
   @media only screen and (min-width: 768px) {
     width: 90%;
     margin-left: 5%;
+    margin-top: 5%;
     p {
       text-align: justify;
       font-size: 22px;
     }
   }
   @media only screen and (min-width: 992px) {
-    width: 23%;
+    width: 35%;
     height: 100%;
     p {
       font-size: 16px;
       text-align: left;
+      margin-top: 5%;
     }
   }
 `;
@@ -96,20 +102,22 @@ export const OurTeamDiv = styled.div`
   @media only screen and (max-width: 600px) {
     width: 80%;
     margin-left: 10%;
+    margin-top: 5%;
     h2 {
       font-size: 32px;
       text-align: center;
     }
   }
   @media only screen and (min-width: 768px) {
+    margin-top: 5%;
     h2 {
       text-align: center;
       font-size: 32px;
     }
   }
   @media only screen and (min-width: 992px) {
-    width: 65%;
-    margin-left: 17.5%;
+    width: 100%;
+    margin-top: 5%;
     h2 {
       font-size: 32px;
       text-align: center;
