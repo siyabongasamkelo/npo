@@ -45,6 +45,6 @@ export const FormCover = styled.form`
     }
   }
   @media only screen and (min-width: 992px) {
-    width: 75%;
+    width: 80%;
   }
 `;
