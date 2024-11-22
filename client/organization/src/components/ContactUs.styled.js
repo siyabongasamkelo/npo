@@ -8,6 +8,7 @@ export const ContactUsCover = styled.section`
 `;
 
 export const ContactUsWrapper = styled.div`
+  margin-top: 5%;
   @media only screen and (min-width: 992px) {
     display: flex;
   }
@@ -20,7 +21,10 @@ export const ContactDetails = styled.div`
     width: 80%;
     margin-left: 10%;
     svg {
-      padding-left: 15px;
+      padding: 0;
+      padding-left: 10px;
+      margin-right: 20px;
+      transform: scale(250%);
     }
   }
 
@@ -29,7 +33,10 @@ export const ContactDetails = styled.div`
     margin-left: 10%;
     margin-top: 8%;
     svg {
-      padding-left: 15px;
+      padding: 0;
+      padding-left: 10px;
+      margin-right: 20px;
+      transform: scale(250%);
     }
     p {
       font-size: 22px;
@@ -47,7 +54,9 @@ export const ContactDetails = styled.div`
     }
     svg {
       padding-left: 10px;
+      margin-right: 20px;
       cursor: pointer;
+      transform: scale(200%);
       &:hover {
         color: #ffb0b0;
         transition: 0.5s ease-in-out;
@@ -58,14 +67,13 @@ export const ContactDetails = styled.div`
 
 export const ContactFormCover = styled.div`
   width: 30%;
-  margin-left: 10%;
   @media only screen and (max-width: 600px) {
-    width: 80%;
+    width: 100%;
   }
   @media only screen and (min-width: 768px) {
     width: 80%;
   }
   @media only screen and (min-width: 992px) {
-    width: 30%;
+    width: 40%;
   }
 `;
