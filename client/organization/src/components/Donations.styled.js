@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const DonationsWrapper = styled.section`
-  /* background-color: rgba(0, 0, 0, 0.9); */
   height: 100vh;
   width: 100%;
+`;
+
+export const DonationsCover = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
