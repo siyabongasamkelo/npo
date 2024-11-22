@@ -60,14 +60,14 @@ export const DonateWrapper = styled.div`
   }
 
   @media only screen and (min-width: 992px) {
-    width: 80%;
+    width: 100%;
     margin-left: 10%;
     h1 {
       font-size: 84px;
       padding-top: 30px;
     }
     p {
-      margin-top: -5%;
+      margin: 0;
     }
 
     input {
