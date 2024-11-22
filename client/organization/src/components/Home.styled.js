@@ -51,7 +51,7 @@ export const HeroSection = styled.div`
     height: 100%;
     h1 {
       font-size: 40px;
-      margin-top: 50%;
+      margin-top: 25%;
     }
     p {
       font-size: 14px;

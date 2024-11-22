@@ -6,7 +6,14 @@ import DonationForm from "./DonationForm";
 const Donations = () => {
   return (
     <DonationsWrapper>
-      <div style={{ backgroundColor: "black" }}>
+      <div
+        style={{
+          backgroundColor: "black",
+          padding: "10px",
+          borderRadius: "30px",
+          marginTop: "2%",
+        }}
+      >
         <Header />
       </div>
       <DonationsCover>
