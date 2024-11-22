@@ -15,7 +15,8 @@ export const Links = styled.div`
     padding-top: 5px;
   }
   svg {
-    padding-left: 10px;
+    margin-left: 10px;
+    transform: scale(90%);
     color: white;
     cursor: pointer;
     &:hover {
