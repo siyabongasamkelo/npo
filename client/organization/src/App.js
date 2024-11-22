@@ -7,6 +7,9 @@ import {
 
 import HomePage from "./pages/HomePage";
 import DonationPage from "./pages/DonationPage";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const router = createBrowserRouter(
@@ -22,6 +25,7 @@ function App() {
   return (
     <>
       <div>
+        <ToastContainer />
         <RouterProvider router={router} />
       </div>
     </>
