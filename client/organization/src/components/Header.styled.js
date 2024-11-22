@@ -11,9 +11,10 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  width: 80%;
-  margin-left: 10%;
-
+  width: 100%;
+  h3 {
+    font-family: "Kaushan Script", cursive;
+  }
   @media only screen and (max-width: 600px) {
     width: 90%;
     margin-left: 5%;
@@ -37,6 +38,8 @@ export const HeaderWrapper = styled.div`
     }
   }
   @media only screen and (min-width: 992px) {
+    width: 100%;
+    margin-left: 0;
     svg {
       display: none;
     }
