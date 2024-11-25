@@ -8,5 +8,5 @@ export const DonationsWrapper = styled.section`
 export const DonationsCover = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: 90%;
 `;
