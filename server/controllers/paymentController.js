@@ -30,10 +30,11 @@ const generateSignature = (data, passPhrase = null) => {
 
 const makePayment = async (req, res) => {
   try {
+    const { email, firstname, lastname } = req.body;
+
     const merchant_id = process.env.MERCHANT_ID;
     const merchant_key = process.env.MERCHANT_KEY;
     const testMode = false;
-
     const pfHost = testMode ? "sandbox.payfast.co.za" : "www.payfast.co.za";
 
     const myData = [];
@@ -44,9 +45,14 @@ const makePayment = async (req, res) => {
     myData["cancel_url"] = "http://localhost:5000/cancel_url";
     myData["notify_url"] = "http://localhost:5000/notify_url";
     // Buyer details
-    myData["name_first"] = "Nondumiso";
-    myData["name_last"] = "Mbuyazi";
-    myData["email_address"] = "ndumane03@gmail.com";
+    // myData["name_first"] = "Nondumiso";
+    // myData["name_last"] = "Mbuyazi";
+    // myData["email_address"] = "ndumane03@gmail.com";
+
+    myData["name_first"] = email;
+    myData["name_last"] = firstname;
+    myData["email_address"] = lastname;
+
     // Transaction details
     myData["m_payment_id"] = "1234";
     myData["amount"] = "300.00";
