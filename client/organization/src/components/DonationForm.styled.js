@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DonationFormWrapper = styled.form`
-  height: 60%;
+  height: 65%;
   width: 30%;
   border-radius: 30px;
   background-color: #ffb0b0;
@@ -12,6 +12,10 @@ export const DonationFormWrapper = styled.form`
   flex-direction: column;
   align-items: center;
 
+  div {
+    width: 85%;
+  }
+
   p {
     font-size: 28px;
     color: rgba(255, 255, 255, 1);
@@ -20,13 +24,20 @@ export const DonationFormWrapper = styled.form`
 
   label {
     color: rgba(255, 255, 255, 0.9);
-    margin-left: -60%;
     margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .error {
+    color: red;
+    margin-top: -2%;
+    font-size: 14px;
+    margin-left: 5%;
   }
 
   input {
     height: 10px;
-    width: 85%;
+    width: 100%;
     border: none;
     border-radius: 50px;
     margin-top: 2%;
