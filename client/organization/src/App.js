@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import { PayButtonContextProvider } from "./context/PayButtonContext";
 import HomePage from "./pages/HomePage";
 import DonationPage from "./pages/DonationPage";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -25,8 +26,10 @@ function App() {
   return (
     <>
       <div>
-        <ToastContainer />
-        <RouterProvider router={router} />
+        <PayButtonContextProvider>
+          <ToastContainer />
+          <RouterProvider router={router} />
+        </PayButtonContextProvider>
       </div>
     </>
   );
