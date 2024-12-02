@@ -5,18 +5,22 @@ import { useFormik } from "formik";
 import { personalDetails } from "../validations/PersonalDetails";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { useState } from "react";
 import Spinner from "react-bootstrap/Spinner";
+import { useContext, useState } from "react";
+import { PayButtonContext } from "../context/PayButtonContext";
 
 const DonationForm = () => {
   const [loading, setLoading] = useState(false);
+  const { addPayButton, payButton } = useContext(PayButtonContext);
+
+  console.log("payButton", payButton);
 
   const showToastErrorMessage = (message) => {
-    toast.error(message);
+    toast?.error(message);
   };
 
   const successToastMessage = (message) => {
-    toast.success(message);
+    toast?.success(message);
   };
 
   const formik = useFormik({
@@ -27,37 +31,37 @@ const DonationForm = () => {
     },
     validationSchema: personalDetails,
     onSubmit: async () => {
+      setLoading(true);
+
+      const { lastname } = formik.values;
+      const { firstname } = formik.values;
+      const { email } = formik.values;
+
+      const url = "http://localhost:5000/donate/payment";
+
       try {
-        setLoading(true);
+        // sending user details and recieving pay button from server
+        const sendUserDetails = await axios.post(url, {
+          lastname,
+          firstname,
+          email,
+        });
 
-        const { lastname } = formik.values;
-        const { firstname } = formik.values;
-        const { email } = formik.values;
-
-        const url = "http://localhost:5000/donate/payment";
-
-        try {
-          const sendUserDetails = await axios.post(url, {
-            lastname,
-            firstname,
-            email,
-          });
-          console.log(sendUserDetails);
-          setLoading(false);
-        } catch (err) {
-          console.log(err);
-          showToastErrorMessage(
-            "there was a problem while registering you please try again"
-          );
-          setLoading(false);
-        }
-
+        console.log(sendUserDetails);
+        addPayButton(sendUserDetails?.data);
+        localStorage.setItem(
+          "payButton",
+          JSON.stringify(sendUserDetails?.data)
+        );
         successToastMessage("user registered successfully");
-        setLoading(true);
+        setLoading(false);
       } catch (err) {
-        console.log(err.message);
-        showToastErrorMessage("Something went wrong please try again later");
-        setLoading(true);
+        console.log(err);
+        showToastErrorMessage(
+          "there was a problem while registering you please try again"
+        );
+        showToastErrorMessage(err?.message);
+        setLoading(false);
       }
     },
   });
@@ -117,7 +121,7 @@ const DonationForm = () => {
           <label className="error">{formik.errors.email}</label>
         )}
       </div>
-      <Button>
+      <Button type="submit">
         {loading ? (
           <div className=" d-flex justify-content-center align-items-center">
             <Spinner animation="border" role="status" />
