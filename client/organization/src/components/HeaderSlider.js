@@ -9,6 +9,7 @@ import { X } from "react-bootstrap-icons";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Facebook, Whatsapp, Instagram, Twitter } from "react-bootstrap-icons";
+import { HashLink } from "react-router-hash-link";
 
 const HeaderSlider = ({ closeMenu, setCloseMenu, display }) => {
   return (
@@ -26,10 +27,9 @@ const HeaderSlider = ({ closeMenu, setCloseMenu, display }) => {
       </CloseButton>
       <Links onClick={setCloseMenu}>
         <Link to={"/"}>Home</Link>
-        <Link to={"/shop"}>Shop</Link>
-        <Link to={"/Cart"}>Cart</Link>
-        <Link to={"/login"}>Login</Link>
-        <Link to={"/contact"}>Contact</Link>
+        <HashLink to="/#aboutUs">About Us</HashLink>
+        <HashLink to="/#ourTeam">Our Team</HashLink>
+        <HashLink to="/#contactUs">Contact us</HashLink>
       </Links>
       {/* <div style={{ width: "90%", marginLeft: "5%" }}></div> */}
       <Copyrights>
