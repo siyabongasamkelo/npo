@@ -5,6 +5,7 @@ import { Button } from "./common/Button.styled";
 import { List } from "react-bootstrap-icons";
 import { useState } from "react";
 import HeaderSlider from "./HeaderSlider";
+import { HashLink } from "react-router-hash-link";
 const Header = () => {
   const [closeMenu, setCloseMenu] = useState(true);
   const [display, setDisplay] = useState("block");
@@ -12,14 +13,19 @@ const Header = () => {
   return (
     <HeaderCover>
       <HeaderWrapper>
-        <h3>Sitinonke</h3>
+        <Link to="/">
+          <h3>Sitinonke</h3>
+        </Link>
         <Links>
           <Link to="/">Home</Link>
-          <Link to="/">About Us</Link>
-          <Link to="/">Our Mission</Link>
-          <Link to="/">Contact us</Link>
+          <HashLink to="/#aboutUs">About Us</HashLink>
+          <HashLink to="/#ourTeam">Our Team</HashLink>
+          <HashLink to="/#contactUs">Contact us</HashLink>
         </Links>
-        <Button>Contact us</Button>
+
+        <HashLink to="/#contactUs">
+          <Button>Contact us</Button>
+        </HashLink>
         <List
           onClick={() => {
             closeMenu ? setDisplay("none") : setDisplay("block");
