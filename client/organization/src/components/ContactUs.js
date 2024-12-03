@@ -18,7 +18,7 @@ import ContactForm from "./common/ContactForm";
 
 const ContactUs = () => {
   return (
-    <ContactUsCover>
+    <ContactUsCover id="contactUs">
       <h2>Contact Us</h2>
       <ContactUsWrapper>
         <ContactFormCover>
