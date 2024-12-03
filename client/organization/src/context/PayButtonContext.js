@@ -6,16 +6,15 @@ export const PayButtonContextProvider = ({ children }) => {
 
   useEffect(() => {
     const retrievedPayButton = localStorage.getItem("payButton");
-    const deserializedPayButton = JSON.parse(retrievedPayButton);
 
-    if (deserializedPayButton !== null || deserializedPayButton !== undefined)
-      setPayButton(deserializedPayButton);
-    if (deserializedPayButton === null || deserializedPayButton === undefined)
+    if (retrievedPayButton !== null || retrievedPayButton !== undefined)
+      setPayButton(retrievedPayButton);
+    if (retrievedPayButton === null || retrievedPayButton === undefined)
       setPayButton([]);
   }, []);
 
   useEffect(() => {
-    const serializedPayButton = JSON.stringify(payButton);
+    const serializedPayButton = payButton;
     localStorage.setItem("payButton", serializedPayButton);
   }, [payButton]);
 
