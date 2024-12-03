@@ -15,6 +15,16 @@ export const HeaderWrapper = styled.div`
   h3 {
     font-family: "Kaushan Script", cursive;
   }
+  a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: rgba(225, 225, 225, 0.8);
+    transition: 0.5s ease-in-out;
+    font-family: "Afacad Flux", sans-serif;
+    &:hover {
+      color: #ffd09b;
+    }
+  }
   @media only screen and (max-width: 600px) {
     width: 90%;
     margin-left: 5%;
@@ -51,16 +61,6 @@ export const HeaderWrapper = styled.div`
 
 export const Links = styled.nav`
   margin-right: 30px;
-  a {
-    padding-left: 30px;
-    text-decoration: none;
-    color: rgba(225, 225, 225, 0.8);
-    transition: 0.5s ease-in-out;
-    font-family: "Afacad Flux", sans-serif;
-    &:hover {
-      color: #ffd09b;
-    }
-  }
 
   @media only screen and (max-width: 600px) {
     display: none;
