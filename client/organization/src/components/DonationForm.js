@@ -8,12 +8,12 @@ import { toast } from "react-toastify";
 import Spinner from "react-bootstrap/Spinner";
 import { useContext, useState } from "react";
 import { PayButtonContext } from "../context/PayButtonContext";
+import { useNavigate } from "react-router-dom";
 
 const DonationForm = () => {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-  const { addPayButton, payButton } = useContext(PayButtonContext);
-
-  console.log("payButton", payButton);
+  const { addPayButton } = useContext(PayButtonContext);
 
   const showToastErrorMessage = (message) => {
     toast?.error(message);
@@ -49,12 +49,11 @@ const DonationForm = () => {
 
         console.log(sendUserDetails);
         addPayButton(sendUserDetails?.data);
-        localStorage.setItem(
-          "payButton",
-          JSON.stringify(sendUserDetails?.data)
-        );
+        localStorage.setItem("payButton", sendUserDetails?.data);
         successToastMessage("user registered successfully");
         setLoading(false);
+
+        setTimeout(navigate("/donate/paybutton"), 4000);
       } catch (err) {
         console.log(err);
         showToastErrorMessage(
@@ -83,7 +82,7 @@ const DonationForm = () => {
         />
         <br></br>
         {formik.errors.firstname && (
-          <label className="error">{formik.errors.firstname}</label>
+          <label className="error">{formik?.errors?.firstname}</label>
         )}
       </div>
 
@@ -101,7 +100,7 @@ const DonationForm = () => {
 
         <br></br>
         {formik.errors.lastname && (
-          <label className="error">{formik.errors.lastname}</label>
+          <label className="error">{formik?.errors?.lastname}</label>
         )}
       </div>
 
@@ -118,7 +117,7 @@ const DonationForm = () => {
         />
 
         {formik.errors.email && (
-          <label className="error">{formik.errors.email}</label>
+          <label className="error">{formik?.errors?.email}</label>
         )}
       </div>
       <Button type="submit">
