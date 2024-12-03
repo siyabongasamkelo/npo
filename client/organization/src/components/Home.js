@@ -5,6 +5,7 @@ import Header from "./Header";
 import { Button } from "./common/Button.styled";
 import { Facebook, Whatsapp, Instagram, Twitter } from "react-bootstrap-icons";
 import { Container } from "react-bootstrap";
+import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
   return (
@@ -19,7 +20,9 @@ const Home = () => {
             we strive to bring back lost hope to all the kids <br></br>in our{" "}
             <span>community</span>...
           </p>
-          <Button>Contact Us</Button>
+          <HashLink to="/#contactUs">
+            <Button>Contact Us</Button>
+          </HashLink>
           <div>
             <Facebook />
             <Whatsapp />
