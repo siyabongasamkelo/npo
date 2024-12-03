@@ -2,15 +2,16 @@ import React from "react";
 import { CopyrightDiv, FooterWrapper, Links } from "./Footer.styled";
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, TwitterX, Whatsapp } from "react-bootstrap-icons";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <Links>
         <Link to="/">Home</Link>
-        <Link to="/">About Us</Link>
-        <Link to="/">Our Mission</Link>
-        <Link to="/">Contact us</Link>
+        <HashLink to="/#aboutUs">About Us</HashLink>
+        <HashLink to="/#ourTeam">Our Team</HashLink>
+        <HashLink to="/#contactUs">Contact us</HashLink>
         <div>
           <p>
             <Facebook />
