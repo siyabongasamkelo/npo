@@ -12,7 +12,7 @@ import aboutpic from "../assets/img/aboutpic.jpg";
 import TeamCard from "./common/TeamCard";
 const AboutUs = () => {
   return (
-    <AboutUsCover>
+    <AboutUsCover id="aboutUs">
       <AboutDiv>
         <h2>About Us</h2>
         <About>
@@ -40,7 +40,7 @@ const AboutUs = () => {
           </AboutText>
         </About>
       </AboutDiv>
-      <OurTeamDiv>
+      <OurTeamDiv id="ourTeam">
         <h2>Our Team</h2>
         <OurTeam>
           <TeamCard></TeamCard>
