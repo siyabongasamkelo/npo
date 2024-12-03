@@ -1,6 +1,7 @@
 import React from "react";
 import { DonateCover, DonateWrapper } from "./Donate.styled";
 import { Button } from "./common/Button.styled";
+import { Link } from "react-router-dom";
 
 const Donate = () => {
   return (
@@ -11,7 +12,9 @@ const Donate = () => {
         <div>
           <form>
             <br></br>
-            <Button type="submit">Donate</Button>
+            <Link to="/donate">
+              <Button type="submit">Donate</Button>
+            </Link>
           </form>
         </div>
       </DonateWrapper>
