@@ -52,16 +52,19 @@ const AboutUs = () => {
             image={aunt}
             email={"nomssitinonkef@gmail.com"}
             occupation={"Founder"}
+            phone={"079 793 4230"}
           ></TeamCard>
           <TeamCard
             image={aunt2}
             email={"nomssitinonkef@gmail.com"}
             occupation={"Founder"}
+            phone={"067 264 5076"}
           ></TeamCard>
           <TeamCard
             image={aunt}
             email={"nokwandakubheka1999@gmail"}
             occupation={"Treasurer"}
+            phone={"072 259 5141"}
           ></TeamCard>
         </OurTeam>
       </OurTeamDiv>

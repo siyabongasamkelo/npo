@@ -9,7 +9,7 @@ import {
 import { Envelope, Telephone } from "react-bootstrap-icons";
 import { Button } from "./Button.styled";
 
-const TeamCard = ({ image }) => {
+const TeamCard = ({ image, occupation, email, phone }) => {
   return (
     <TeamCoverCard>
       <ProfilePhoto backgroundImage={image}></ProfilePhoto>
@@ -17,17 +17,17 @@ const TeamCard = ({ image }) => {
         <div>
           <p>
             Email &nbsp;&nbsp;
-            <Envelope />: &nbsp;&nbsp;Siya@gmail.com
+            <Envelope />: &nbsp;&nbsp;{email}
           </p>
         </div>
         <div>
           <p>
             contact &nbsp;&nbsp;
-            <Telephone />: &nbsp;&nbsp;061 189 2221
+            <Telephone />: &nbsp;&nbsp;{phone}
           </p>
         </div>
         <div>
-          <p>Occupation : &nbsp;&nbsp;Founder</p>
+          <p>Occupation : &nbsp;&nbsp;{occupation}</p>
         </div>
       </Details>
       <Action>
