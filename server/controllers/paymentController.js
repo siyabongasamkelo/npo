@@ -41,9 +41,14 @@ const makePayment = async (req, res) => {
     // Merchant details
     myData["merchant_id"] = `${merchant_id}`;
     myData["merchant_key"] = `${merchant_key}`;
-    myData["return_url"] = "http://localhost:3000/thankyou";
-    myData["cancel_url"] = "http://localhost:3000/cancel";
-    myData["notify_url"] = "http://localhost:5000/notify_url";
+    myData["return_url"] = "https://sitinonke.netlify.app/thankyou";
+    myData["cancel_url"] = "https://sitinonke.netlify.app/cancel";
+    myData["notify_url"] = "https://sitinonke.netlify.app/notify_url";
+
+    //myData["notify_url"] = "http://localhost:5000/notify_url";
+
+    // https://sitinonke.netlify.app/donate
+
     // Buyer details
 
     myData["name_first"] = firstname;
