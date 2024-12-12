@@ -41,7 +41,7 @@ const DonationForm = () => {
 
       // const url = "http://localhost:5000/donate/payment";
 
-      const url = "https://sitinonke.onrender.com";
+      const url = "https://sitinonke.onrender.com/payment";
 
       try {
         // sending user details and recieving pay button from server
