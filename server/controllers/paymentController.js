@@ -30,7 +30,7 @@ const generateSignature = (data, passPhrase = null) => {
 
 const makePayment = async (req, res) => {
   try {
-    const { email, firstname, lastname } = req.body;
+    const { email, firstname, lastname, amount } = req.body;
 
     const merchant_id = process.env.MERCHANT_ID;
     const merchant_key = process.env.MERCHANT_KEY;
@@ -41,22 +41,20 @@ const makePayment = async (req, res) => {
     // Merchant details
     myData["merchant_id"] = `${merchant_id}`;
     myData["merchant_key"] = `${merchant_key}`;
-    myData["return_url"] = "http://localhost:5000/return_url";
-    myData["cancel_url"] = "http://localhost:5000/cancel_url";
+    myData["return_url"] = "http://localhost:3000/thankyou";
+    myData["cancel_url"] = "http://localhost:3000/cancel";
     myData["notify_url"] = "http://localhost:5000/notify_url";
     // Buyer details
-    // myData["name_first"] = "Nondumiso";
-    // myData["name_last"] = "Mbuyazi";
-    // myData["email_address"] = "ndumane03@gmail.com";
 
-    myData["name_first"] = email;
-    myData["name_last"] = firstname;
-    myData["email_address"] = lastname;
+    myData["name_first"] = firstname;
+    myData["name_last"] = lastname;
+    myData["email_address"] = email;
 
     // Transaction details
-    myData["m_payment_id"] = "1234";
-    myData["amount"] = "300.00";
-    myData["item_name"] = "Order#123";
+    myData["m_payment_id"] = "sitinonke2024";
+    // myData["amount"] = "300.00";
+    myData["amount"] = `${amount}`;
+    myData["item_name"] = "sitinonkedonation";
     // myData["payment_method"] = "dc";
 
     // Generate signature

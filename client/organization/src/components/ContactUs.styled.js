@@ -4,6 +4,7 @@ export const ContactUsCover = styled.section`
   h2 {
     font-size: 32px;
     text-align: center;
+    font-family: "Kaushan Script", cursive;
   }
 `;
 
@@ -44,7 +45,7 @@ export const ContactDetails = styled.div`
   }
 
   @media only screen and (min-width: 992px) {
-    height: 50vh;
+    height: 20vh;
     width: 30%;
     margin-left: 0;
     margin-top: 0%;

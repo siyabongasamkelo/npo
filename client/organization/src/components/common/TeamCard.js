@@ -5,14 +5,14 @@ import {
   ProfilePhoto,
   TeamCoverCard,
 } from "./TeamCard.styled";
-import profile from "../../assets/img/profile.jpg";
+// import profile from "../../assets/img/profile.jpg";
 import { Envelope, Telephone } from "react-bootstrap-icons";
 import { Button } from "./Button.styled";
 
-const TeamCard = () => {
+const TeamCard = ({ image }) => {
   return (
     <TeamCoverCard>
-      <ProfilePhoto backgroundImage={profile}></ProfilePhoto>
+      <ProfilePhoto backgroundImage={image}></ProfilePhoto>
       <Details>
         <div>
           <p>

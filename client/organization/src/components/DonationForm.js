@@ -28,6 +28,7 @@ const DonationForm = () => {
       firstname: "",
       lastname: "",
       email: "",
+      amount: "10",
     },
     validationSchema: personalDetails,
     onSubmit: async () => {
@@ -36,8 +37,11 @@ const DonationForm = () => {
       const { lastname } = formik.values;
       const { firstname } = formik.values;
       const { email } = formik.values;
+      const { amount } = formik.values;
 
-      const url = "http://localhost:5000/donate/payment";
+      // const url = "http://localhost:5000/donate/payment";
+
+      const url = "https://sitinonke.onrender.com";
 
       try {
         // sending user details and recieving pay button from server
@@ -45,6 +49,7 @@ const DonationForm = () => {
           lastname,
           firstname,
           email,
+          amount,
         });
 
         console.log(sendUserDetails);
@@ -118,6 +123,23 @@ const DonationForm = () => {
 
         {formik.errors.email && (
           <label className="error">{formik?.errors?.email}</label>
+        )}
+      </div>
+
+      <div>
+        <label for="amount">amount to donate in rands</label>
+        <input
+          type="text"
+          id="amount"
+          name="amount"
+          placeholder="amount to donate"
+          value={formik.values.amount}
+          onBlur={formik.handleBlur}
+          onChange={formik.handleChange}
+        />
+
+        {formik.errors.amount && (
+          <label className="error">{formik?.errors?.amount}</label>
         )}
       </div>
       <Button type="submit">

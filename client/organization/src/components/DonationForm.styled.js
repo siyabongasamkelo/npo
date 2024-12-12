@@ -68,7 +68,7 @@ export const DonationFormWrapper = styled.form`
   }
   @media only screen and (min-width: 992px) {
     width: 30%;
-    height: 60%;
+    height: 65%;
     input {
       height: 40px;
       font-size: 18px;

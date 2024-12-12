@@ -1,7 +1,7 @@
 import React from "react";
 import {
   ContactDetails,
-  ContactFormCover,
+  // ContactFormCover,
   ContactUsCover,
   ContactUsWrapper,
 } from "./ContactUs.styled";
@@ -14,31 +14,35 @@ import {
   TwitterX,
   Whatsapp,
 } from "react-bootstrap-icons";
-import ContactForm from "./common/ContactForm";
+import { Link } from "react-router-dom";
+// import ContactForm from "./common/ContactForm";
 
 const ContactUs = () => {
   return (
     <ContactUsCover id="contactUs">
       <h2>Contact Us</h2>
       <ContactUsWrapper>
-        <ContactFormCover>
-          <ContactForm />
-        </ContactFormCover>
+        {/* <ContactFormCover><ContactForm /></ContactFormCover> */}
         <ContactDetails>
           <p>
-            <Envelope /> siya@gmail.com
+            <Envelope /> sitinonkoefoundation@gmail.com
           </p>
           <p>
-            <Telephone /> 061 189 2221
+            <Telephone /> 079 793 4230
+          </p>
+
+          <p>
+            <Whatsapp /> 079 793 4230
           </p>
           <p>
             <GeoAlt /> Kwazulu-Natal, Nquthu, Sandlwana
           </p>
           <p>
-            <Facebook />
+            <Link to={"https://www.facebook.com/profile.php?id=61561702177958"}>
+              <Facebook />
+            </Link>
             <TwitterX />
             <Instagram />
-            <Whatsapp />
           </p>
         </ContactDetails>
       </ContactUsWrapper>

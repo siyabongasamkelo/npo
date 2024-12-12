@@ -12,6 +12,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import PayButtonPage from "./pages/PayButtonPage";
+import ThankYouPage from "./pages/ThankYouPage";
+import Home2 from "./components/Home2";
 
 function App() {
   const router = createBrowserRouter(
@@ -21,7 +23,10 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/donate" element={<DonationPage />} />
         <Route path="/donate/paybutton" element={<PayButtonPage />} />
+        <Route path="/thankyou" element={<ThankYouPage />} />
+        <Route path="/cancel" element={<ThankYouPage />} />
         <Route path="/*" element={<HomePage />} />
+        <Route path="/home2" element={<Home2 />} />
       </Route>
     )
   );

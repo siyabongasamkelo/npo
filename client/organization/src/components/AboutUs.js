@@ -8,8 +8,13 @@ import {
   OurTeam,
   OurTeamDiv,
 } from "./AboutUs.styled";
-import aboutpic from "../assets/img/aboutpic.jpg";
+// import aboutpic from "../assets/img/aboutpic.jpg";
+// import aboutpic from "../assets/img/org2.jpg";
+import aboutpic from "../assets/img/org3.jpg";
 import TeamCard from "./common/TeamCard";
+import aunt from "../assets/img/aunt.jpg";
+import aunt2 from "../assets/img/aunt2.jpg";
+
 const AboutUs = () => {
   return (
     <AboutUsCover id="aboutUs">
@@ -43,9 +48,21 @@ const AboutUs = () => {
       <OurTeamDiv id="ourTeam">
         <h2>Our Team</h2>
         <OurTeam>
-          <TeamCard></TeamCard>
-          <TeamCard></TeamCard>
-          <TeamCard></TeamCard>
+          <TeamCard
+            image={aunt}
+            email={"nomssitinonkef@gmail.com"}
+            occupation={"Founder"}
+          ></TeamCard>
+          <TeamCard
+            image={aunt2}
+            email={"nomssitinonkef@gmail.com"}
+            occupation={"Founder"}
+          ></TeamCard>
+          <TeamCard
+            image={aunt}
+            email={"nokwandakubheka1999@gmail"}
+            occupation={"Treasurer"}
+          ></TeamCard>
         </OurTeam>
       </OurTeamDiv>
     </AboutUsCover>

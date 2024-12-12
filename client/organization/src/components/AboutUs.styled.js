@@ -6,6 +6,10 @@ export const AboutUsCover = styled.section`
 `;
 
 export const AboutDiv = styled.div`
+  h2 {
+    font-family: "Kaushan Script", cursive;
+  }
+
   @media only screen and (max-width: 600px) {
     h2 {
       text-align: center;
@@ -59,10 +63,12 @@ export const AboutPic = styled.div`
     width: 45%;
     height: 100%;
     img {
-      height: 75%;
-      width: 95%;
+      height: 70%;
+      width: 90%;
       margin-top: 5%;
       margin-left: 5%;
+      /* object-fit: fill; */
+      /* background-position: center; */
     }
   }
 `;
@@ -99,6 +105,9 @@ export const AboutText = styled.div`
 `;
 
 export const OurTeamDiv = styled.div`
+  h2 {
+    font-family: "Kaushan Script", cursive;
+  }
   @media only screen and (max-width: 600px) {
     width: 80%;
     margin-left: 10%;
