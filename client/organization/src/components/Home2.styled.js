@@ -7,7 +7,7 @@ export const Home2Wrapper = styled.section`
 `;
 
 export const Home2Div = styled.div`
-  height: 80vh;
+  height: 65vh;
   width: 100%;
 
   .col1 {
@@ -28,7 +28,7 @@ export const Home2Div = styled.div`
     display: flex;
     justify-content: space-between;
     div {
-      width: 15%;
+      width: 18%;
       height: 100%;
     }
     .row1,
@@ -38,7 +38,7 @@ export const Home2Div = styled.div`
       img {
         height: 50%;
         width: 100%;
-        border-radius: 30px;
+        border-radius: 20px;
         object-fit: fill;
         background-position: center;
       }
@@ -55,7 +55,7 @@ export const Home2Div = styled.div`
       img {
         height: 48%;
         width: 100%;
-        border-radius: 30px;
+        border-radius: 20px;
       }
 
       .pic1 {
@@ -70,8 +70,10 @@ export const Home2Div = styled.div`
       img {
         height: 100%;
         width: 100%;
-        border-radius: 30px;
+        border-radius: 20px;
       }
     }
   }
 `;
+
+export const ActionDiv = styled.div``;

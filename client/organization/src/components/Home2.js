@@ -2,7 +2,7 @@ import React from "react";
 import { Home2Div, Home2Wrapper } from "./Home2.styled";
 import { Container } from "react-bootstrap";
 import Header from "./Header";
-import aboutpic from "../assets/img/aboutpic.jpg";
+import aboutpic from "../assets/img/org2.jpg";
 
 const Home2 = () => {
   return (

@@ -25,7 +25,7 @@ const ContactUs = () => {
         {/* <ContactFormCover><ContactForm /></ContactFormCover> */}
         <ContactDetails>
           <p>
-            <Envelope /> sitinonkoefoundation@gmail.com
+            <Envelope /> sitinonkefoundation5@gmail.org
           </p>
           <p>
             <Telephone /> 079 793 4230
