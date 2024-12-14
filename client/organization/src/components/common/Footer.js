@@ -14,7 +14,9 @@ const Footer = () => {
         <HashLink to="/#contactUs">Contact us</HashLink>
         <div>
           <p>
-            <Facebook />
+            <Link to={"https://www.facebook.com/profile.php?id=61561702177958"}>
+              <Facebook />
+            </Link>
             <Instagram />
             <TwitterX />
             <Whatsapp />
