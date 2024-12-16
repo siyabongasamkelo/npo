@@ -1,11 +1,12 @@
 import React from "react";
 import { HeroSection, HomeCover } from "./Home.styled";
-import background from "../assets/img/background.jpg";
+// import background from "../assets/img/background.jpg";
 import Header from "./Header";
 import { Button } from "./common/Button.styled";
 import { Facebook, Whatsapp, Instagram, Twitter } from "react-bootstrap-icons";
 import { Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
+import background from "../assets/img/org.jpg";
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
         <Header />
         <HeroSection>
           <h1>
-            Bringing Back The Lost <br></br>Hope{" "}
+            Sitinonke <br></br>Together We Work
           </h1>
           <p>
             we strive to bring back lost hope to all the kids <br></br>in our{" "}

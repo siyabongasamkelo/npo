@@ -13,11 +13,13 @@ const Footer = () => {
         <HashLink to="/#ourTeam">Our Team</HashLink>
         <HashLink to="/#contactUs">Contact us</HashLink>
         <div>
-          <p>
+          <p style={{ display: "flex", alignItems: "center" }}>
             <Link to={"https://www.facebook.com/profile.php?id=61561702177958"}>
               <Facebook />
             </Link>
-            <Instagram />
+            <Link to="https://www.instagram.com/ssitinonkefoundation23/?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D">
+              <Instagram />
+            </Link>
             <TwitterX />
             <Whatsapp />
           </p>

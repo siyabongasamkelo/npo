@@ -42,6 +42,7 @@ const ContactUs = () => {
               <Facebook />
             </Link>
             <TwitterX />
+            <Link to="https://www.instagram.com/ssitinonkefoundation23/?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D"></Link>
             <Instagram />
           </p>
         </ContactDetails>

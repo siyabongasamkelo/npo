@@ -26,6 +26,10 @@ export const Links = styled.div`
   }
   div {
     margin-left: -10px;
+    margin-top: 5px;
+    a {
+      padding-top: 0;
+    }
   }
   @media only screen and (max-width: 600px) {
     text-align: center;
