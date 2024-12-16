@@ -39,9 +39,13 @@ const HeaderSlider = ({ closeMenu, setCloseMenu, display }) => {
         </p>
       </Copyrights>
       <SocialMediaIcons>
-        <Facebook />
+        <Link to={"https://www.facebook.com/profile.php?id=61561702177958"}>
+          <Facebook />
+        </Link>
         <Whatsapp />
-        <Instagram />
+        <Link to="https://www.instagram.com/ssitinonkefoundation23/?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D">
+          <Instagram />
+        </Link>
         <Twitter />
       </SocialMediaIcons>
     </HeaderSliderStyled>
