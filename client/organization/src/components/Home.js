@@ -7,6 +7,7 @@ import { Facebook, Whatsapp, Instagram, Twitter } from "react-bootstrap-icons";
 import { Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 import background from "../assets/img/org.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -25,9 +26,13 @@ const Home = () => {
             <Button>Contact Us</Button>
           </HashLink>
           <div>
-            <Facebook />
+            <Link to={"https://www.facebook.com/profile.php?id=61561702177958"}>
+              <Facebook />
+            </Link>
             <Whatsapp />
-            <Instagram />
+            <Link to="https://www.instagram.com/ssitinonkefoundation23/?utm_source=qr&igsh=MzNlNGNkZWQ4Mg%3D%3D">
+              <Instagram />
+            </Link>
             <Twitter />
           </div>
         </HeroSection>
