@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const TeamCoverCard = styled.div`
   height: 45vh;
+  height: auto;
   width: 23%;
   margin-bottom: 30px;
   margin-top: 3%;
@@ -11,15 +12,18 @@ export const TeamCoverCard = styled.div`
   @media only screen and (min-width: 768px) {
     width: 60%;
     height: 70vh;
+    height: auto;
   }
   @media only screen and (min-width: 992px) {
     height: 45vh;
+    height: auto;
     width: 23%;
   }
 `;
 
 export const ProfilePhoto = styled.div`
   height: 45%;
+  height: 30vh;
   width: 100%;
   background-image: url(${(props) => props.backgroundImage});
   background-size: cover;

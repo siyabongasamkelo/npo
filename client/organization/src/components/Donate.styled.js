@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const DonateCover = styled.section`
   height: 30vh;
+  height: auto;
   width: 100%;
   background-color: #343131;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 `;
 
 export const DonateWrapper = styled.div`
@@ -62,6 +63,7 @@ export const DonateWrapper = styled.div`
   @media only screen and (min-width: 992px) {
     width: 100%;
     margin-left: 10%;
+    margin-top: 0%;
     h1 {
       font-size: 84px;
       padding-top: 30px;

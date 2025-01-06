@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import ContactUs from "../components/ContactUs";
 import Donate from "../components/Donate";
 import Footer from "../components/common/Footer";
+import PreviousProjects from "../components/PreviousProjects";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Home />
       <Container>
         <AboutUs />
+        <PreviousProjects />
         <ContactUs />
         <Donate />
         <Footer />

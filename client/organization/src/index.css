@@ -6,6 +6,7 @@ body {
   /* font-family: "Edu AU VIC WA NT Guides", cursive; */
   font-family: "Kaushan Script", cursive;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 code {

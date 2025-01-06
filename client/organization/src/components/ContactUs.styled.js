@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ContactUsCover = styled.section`
+  height: auto;
+  margin-bottom: 10%;
   h2 {
     font-size: 32px;
     text-align: center;
@@ -10,6 +12,7 @@ export const ContactUsCover = styled.section`
 
 export const ContactUsWrapper = styled.div`
   margin-top: 5%;
+  height: auto;
   @media only screen and (min-width: 992px) {
     display: flex;
   }

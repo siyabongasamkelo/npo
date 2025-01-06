@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutUsCover = styled.section`
   background-color: white;
-  /* background-color: red; */
+  height: auto;
 `;
 
 export const AboutDiv = styled.div`
@@ -36,6 +36,7 @@ export const About = styled.div`
   }
   @media only screen and (min-width: 992px) {
     height: 50vh;
+    height: auto;
     display: flex;
   }
 `;
@@ -105,6 +106,7 @@ export const AboutText = styled.div`
 `;
 
 export const OurTeamDiv = styled.div`
+  height: auto;
   h2 {
     font-family: "Kaushan Script", cursive;
   }
@@ -135,6 +137,7 @@ export const OurTeamDiv = styled.div`
 `;
 
 export const OurTeam = styled.div`
+  height: auto;
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 600px) {

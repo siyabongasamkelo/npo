@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const FooterWrapper = styled.footer`
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  margin-top: -10%;
+  padding-top: 2%;
 `;
 
 export const Links = styled.div`
