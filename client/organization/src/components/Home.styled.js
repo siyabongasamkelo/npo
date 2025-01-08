@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HomeCover = styled.div`
   height: 100vh;
-  height: auto;
+  /* height: auto; */
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
     url(${(props) => props.backgroundImage});
@@ -93,7 +93,7 @@ export const HeroSection = styled.div`
     width: 100%;
     height: 100%;
     h1 {
-      margin-top: 15%;
+      margin-top: 8%;
       font-size: 84px;
     }
     p {
@@ -104,7 +104,7 @@ export const HeroSection = styled.div`
       margin-top: 0;
     }
     div {
-      margin-top: 14%;
+      margin-top: 0%;
       margin-left: -90%;
     }
   }
