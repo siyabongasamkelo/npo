@@ -5,21 +5,18 @@ import {
   ProjectCardWrapper,
   TextDiv,
 } from "./ProjectCard.styled";
-import propic from "../../assets/img/aboutpic.jpg";
 import { Button } from "./Button.styled";
 import { Link } from "react-router-dom";
 
-const ProjectCard = () => {
+const ProjectCard = ({ name, description, photo }) => {
   return (
     <ProjectCardWrapper>
       <ImageDiv>
-        <img src={propic} alt="house" />
+        <img src={photo} alt="house" />
       </ImageDiv>
       <TextDiv>
-        <p>
-          on this day we visited the children of the orphanage in kwazulu-natal
-          and we did paintings for them that they will use in future
-        </p>
+        <h6>{name}</h6>
+        <p>{description}</p>
       </TextDiv>
       <ProjectCardAction>
         <Button>

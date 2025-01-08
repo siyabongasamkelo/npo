@@ -13,4 +13,14 @@ export const ProjectsCover = styled.div`
   margin-bottom: 5%;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  @media only screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+  }
 `;

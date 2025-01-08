@@ -5,6 +5,7 @@ export const ProjectDetailsCardWrapper = styled.section`
   margin-top: 5%;
   border-radius: 30px;
   padding: 15px;
+  width: 80%;
 `;
 
 export const ProjectDetailsCardCover = styled.div``;
@@ -16,7 +17,7 @@ export const ProjectDetailsCardData = styled.div`
 
   .images {
     width: 35%;
-    height: 60vh;
+    height: 50vh;
     background-color: red;
     background-color: rgba(0, 0, 0, 0.7);
 
@@ -53,6 +54,46 @@ export const ProjectDetailsCardData = styled.div`
     div {
       margin-top: 5%;
       font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    .images {
+      width: 100%;
+    }
+    .details {
+      width: 100%;
+      margin-left: 0;
+
+      h4 {
+        margin-top: 5%;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    flex-direction: column;
+
+    .images {
+      width: 100%;
+    }
+    .details {
+      width: 100%;
+      margin-left: 0;
+
+      h4 {
+        margin-top: 5%;
+      }
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+    .images {
+      width: 35%;
+    }
+    .details {
+      width: 55%;
+      margin-left: 5%;
     }
   }
 `;
