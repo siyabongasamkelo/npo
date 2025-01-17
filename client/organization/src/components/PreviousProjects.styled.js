@@ -12,7 +12,8 @@ export const ProjectsCover = styled.div`
   margin-top: 5%;
   margin-bottom: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 100%;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -22,5 +23,6 @@ export const ProjectsCover = styled.div`
   }
   @media only screen and (min-width: 992px) {
     flex-direction: row;
+    margin-left: 5%;
   }
 `;

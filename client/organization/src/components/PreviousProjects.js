@@ -28,7 +28,7 @@ const PreviousProjects = () => {
           name={"Food Parcels"}
           photo={food}
           description={
-            "Sitinonke organization was handing foof parcels to the local members of Isandlwana."
+            "Sitinonke organization was handing food parcels to the people of mpumalanga"
           }
         />
       </ProjectsCover>

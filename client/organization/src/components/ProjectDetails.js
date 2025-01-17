@@ -47,7 +47,7 @@ const ProjectDetails = () => {
           before={food1}
           after={food2}
           description={
-            "Sitinonke organization was handing foof parcels to the local members of Isandlwana went all out in Sandlwana Area hadning out food parcels to everyone who was in need of food , They aim to gether even more food and expand their serving areas next time."
+            "We keep on helping where we can on this day we paid a visit to a family of two, a single young mother where we were able to buy groceries for them and some clothes for Christmas. Thanks to our donor Ann Friedholm with her team we appreciated your help. As we continue to grow we continue to help families in need with our food parcels of our journey to feed more families."
           }
         />
       </ProjectDetailsCover>
