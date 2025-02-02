@@ -14,6 +14,7 @@ import aboutpic from "../assets/img/org3.jpg";
 import TeamCard from "./common/TeamCard";
 import aunt from "../assets/img/aunt.jpg";
 import aunt2 from "../assets/img/aunt2.jpg";
+import nokwanda from "../assets/img/nokwanda.jpg";
 
 const AboutUs = () => {
   return (
@@ -37,7 +38,7 @@ const AboutUs = () => {
               <br></br>
               Our commitment to making a positive impact in rural areas drives
               us to strive for a better future for all children. With our base
-              in Kwazulu Natal, Nquthu, we are proud to be a non-profit
+              in KwaZulu-Natal, Nquthu, we are proud to be a non-profit
               organization actively making a tangible difference in the lives of
               young individuals. Our documented efforts and impactful work stand
               as a testament to our dedication and passion for this cause.
@@ -61,7 +62,7 @@ const AboutUs = () => {
             phone={"067 264 5076"}
           ></TeamCard>
           <TeamCard
-            image={aunt}
+            image={nokwanda}
             email={"nokwandakubheka1999@gmail"}
             occupation={"Treasurer"}
             phone={"072 259 5141"}

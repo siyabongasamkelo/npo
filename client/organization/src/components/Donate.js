@@ -8,7 +8,7 @@ const Donate = () => {
     <DonateCover>
       <DonateWrapper>
         <h1>Donate Any Amount Now</h1>
-        <p>Your donations can help us make a huge different...</p>
+        <p>Your donations can help us make a huge difference...</p>
         <div>
           <form>
             <br></br>

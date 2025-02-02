@@ -104,8 +104,8 @@ export const HeroSection = styled.div`
       margin-top: 0;
     }
     div {
-      margin-top: 0%;
-      margin-left: -90%;
+      margin-top: 25%;
+      margin-left: -80%;
     }
   }
 `;

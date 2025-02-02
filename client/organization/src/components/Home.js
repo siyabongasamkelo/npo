@@ -19,8 +19,8 @@ const Home = () => {
             Sitinonke <br></br>Together We Work
           </h1>
           <p>
-            we strive to bring back lost hope to all the kids <br></br>in our{" "}
-            <span>community</span>...
+            we strive to bring back the lost hope to all the kids <br></br>in
+            our <span>community</span>...
           </p>
           <HashLink to="/#contactUs">
             <Button>Contact Us</Button>
