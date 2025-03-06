@@ -3,9 +3,9 @@ import { Home2Div, Home2Wrapper } from "./Home2.styled";
 import { Container } from "react-bootstrap";
 import Header from "./Header";
 import { Button } from "./common/Button.styled";
-import { Facebook, Instagram, TwitterX, Whatsapp } from "react-bootstrap-icons";
-import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+// import { Facebook, Instagram, TwitterX, Whatsapp } from "react-bootstrap-icons";
+// import { HashLink } from "react-router-hash-link";
+// import { Link } from "react-router-dom";
 
 const Home2 = () => {
   return (
