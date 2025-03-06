@@ -6,11 +6,14 @@ import ContactUs from "../components/ContactUs";
 import Donate from "../components/Donate";
 import Footer from "../components/common/Footer";
 import PreviousProjects from "../components/PreviousProjects";
+import Home2 from "../components/Home2";
 
 const HomePage = () => {
   return (
     <div>
-      <Home />
+      {/* <Home /> */}
+      <Home2 />
+
       <Container>
         <AboutUs />
         <PreviousProjects />
